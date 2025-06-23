@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio Wisata Medan</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', serif; /* Mengubah font menjadi Times New Roman */
+            background-color: #fffaf0; /* warm cream background */
+            color: #2c3e50; /* dark blue gray */
+        }
+        header {
+            background-color: #16424e; /* dark teal/navy alternative */
+            color: #f0f8ff; /* alice blue for text */
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(22, 66, 78, 0.7);
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 3px #0b242a;
+        }
+        header .logo img {
+            width: 50px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px #72a0c1;
+        }
+        nav a {
+            color: #a3c4bc; /* soft moss green */
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+        nav a.active,
+        nav a:hover {
+            color: #d9b310; /* warm golden-yellow accent */
+            text-shadow: 1px 1px 2px #7e6a12;
+        }
+        main {
+            display: flex;
+            padding: 30px 40px;
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto 50px auto;
+        }
+        #content {
+            flex: 3;
+        }
+        article.card {
+            background-color: #fdf6e3;
+            padding: 18px 25px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(24, 43, 65, 0.12);
+            transition: box-shadow 0.3s ease;
+        }
+        article.card:hover {
+            box-shadow: 0 0 25px rgba(217, 179, 16, 0.5);
+        }
+        article h2 {
+            font-size: 1.75rem;
+            color: #326273; /* teal */
+            margin-bottom: 12px;
+            letter-spacing: 1.7px;
+            text-transform: uppercase;
+        }
+        article p {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            letter-spacing: 0.5px;
+            margin-top: 8px;
+        }
+        .image-content {
+            width: 100%;
+            max-height: 320px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(50, 50, 50, 0.1);
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+            cursor: zoom-in;
+        }
+        .image-content:hover {
+            transform: scale(1.02);
+        }
+        aside {
+            flex: 1;
+            background-color: #dcedd2;
+            border-radius: 15px;
+            padding: 25px 30px;
+            box-shadow: 0 0 15px rgba(45, 80, 45, 0.2);
+            color: #2e4f31;
+            font-weight: 700;
+            text-align: center;
+        }
+        aside img.profile-image {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 0 15px #7ca87c;
+            margin-bottom: 20px;
+        }
+        aside h2 {
+            font-weight: 800;
+            font-size: 1.7rem;
+            margin-bottom: 18px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #3a5a40;
+        }
+        aside table {
+            width: 100%;
+            color: #264d26;
+            font-size: 1.05rem;
+            font-weight: 600;
+            border-collapse: collapse;
+        }
+        aside table tr {
+            border-bottom: 1px solid #aacbaa;
+        }
+        aside table td,
+        aside table th {
+            padding: 8px 0;
+            text-align: left;
+        }
+        aside table tr:last-child {
+            border-bottom: none;
+        }
+        footer {
+            background-color: #16424e;
+            color: #f0f8ff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+        @media (max-width: 900px) {
+            main {
+                flex-direction: column;
+                padding: 15px 20px;
+            }
+            aside {
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://fokuspapua.com/wp-content/uploads/2023/12/LOGO__TAGLINE_BRANDING_PARIWISATA_PROV_PAPUA_-_FINAL_GA1_050.jpg" alt="Logo Wisata">
+            Wisata Papua
+        </div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Gallery</a>
+        </nav>
+    </header>
+    <main>
+        <div id="content">
+            <article id="geopark" class="card">
+                <h2>Raja Empat</h2>
+                <img
+                    src="https://cdn.generationvoyage.fr/2023/05/visiter-raja-ampat-indonesie-755x503.jpg"
+                    alt="Raja Empat"
+                    class="image-content"
+                />
+                <p>
+                    Raja Ampat adalah sebuah kepulauan yang terletak di Papua Barat, Indonesia. Dikenal dengan keindahan alam bawah lautnya, Raja Ampat merupakan surga bagi para penyelam dan pecinta alam. Dengan lebih dari 1.500 spesies ikan dan 600 spesies terumbu karang, tempat ini menawarkan pengalaman snorkeling dan diving yang tak terlupakan.
+                </p>
+            </article>
+            <article id="pantai" class="card">
+                <h2>Danau Panai</h2>
+                <img
+                    src="https://anekatempatwisata.com/wp-content/uploads/2014/09/Danau-Paniai.jpeg"
+                    alt="Danau Paniai"
+                    class="image-content"
+                />
+                <p>
+                    Danau Panai adalah danau yang terletak di Papua, terkenal dengan keindahan alamnya yang menakjubkan. Danau ini dikelilingi oleh hutan tropis yang rimbun dan merupakan tempat yang ideal untuk bersantai dan menikmati keindahan alam.
+                </p>
+            </article>
+            <article id="curug" class="card">
+                <h2>Desa Wisata Sauwandarek</h2>
+                <img
+                    src="https://cdn.idntimes.com/content-images/community/2021/05/87560780-514970232496189-5801406618086919405-n-bede63ddc109b15b99f580a172e1e513-8210a99b979ec64310eea3a793b9c82c.jpg"
+                    alt="Desa Wisata Sauwandarek"
+                    class="image-content"
+                />
+                <p>
+                    Desa Wisata Sauandarek adalah desa yang menawarkan pengalaman budaya dan tradisi Papua. Di sini, pengunjung dapat belajar tentang kehidupan sehari-hari masyarakat setempat, menikmati kuliner khas, dan berpartisipasi dalam berbagai kegiatan tradisional. Desa Wisata Sauandarek adalah desa yang menawarkan pengalaman budaya dan tradisi Papua. Di sini, pengunjung dapat belajar tentang kehidupan sehari-hari masyarakat setempat, menikmati kuliner khas, dan berpartisipasi dalam berbagai kegiatan tradisional.
+                </p>
+            </article>
+            <article id="goa" class="card">
+                <h2>Air Terjun Bihewa Nabire</h2>
+                <img
+                    src="https://pesonapapua.com/wp-content/uploads/2024/04/images-1.jpeg"
+                    alt="Air Terjun Bihewa Nabire"
+                    class="image-content"
+                />
+                <p>
+                    Air Terjun Bihewa adalah salah satu lokasi wisata yang terletak di distrik Makimi, Kabupaten Nabire, Provinsi Papua Tengah Indonesia. Air Terjun Bihewa mempunyai ketinggian kurang lebih 40 meter dan memiliki tujuh tingkat. Tingkat yang paling mudah dan banyak dikunjungi wisatawan adalah tingkat kedua.Air Terjun Bihewa pertama kali ditemukan oleh warga lokal.
+
+Mulanya, warga lokal menemukan hulu Sungai Nabire yang kemudian membawanya ke Air Terjun Nabire. Lokasinya terpencil di dalam hutan belantara. Air Terjun Bihewa memiliki daya tarik yang kuat dengan airnya yang jatuh dari tebing tinggi.
+
+menciptakan kolam biru yang mengundang pengunjung untuk merasakan kesejukan airnya yang segar.
+
+Suasana alam liar yang masih alami di sekitarnya menambah pesona tempat ini, menjadikannya surga bagi pencinta alam.
+
+Keindahannya yang luar biasa dan ketenangan alam yang disuguhkan akan meninggalkan kesan mendalam.
+
+dan menjadi pengalaman tak terlupakan bagi siapa pun yang telah mengunjungi tempat ini.
+                </p>
+            </article>
+            <article id="kampung" class="card">
+                <h2>Danau Idenberg</h2>
+                <img
+                    src="https://liburanyuk.co.id/wp-content/uploads/2021/12/@natalimgy_.jpg"
+                    alt="Danau Idenberg"
+                    class="image-content"
+                />
+                <p>
+                    Danau Idenberg adalah sebuah danau yang terletak di Papua, Indonesia, tepatnya di Kabupaten Jayapura. Danau ini dikenal dengan keindahan alamnya yang menakjubkan, dikelilingi oleh pegunungan dan hutan tropis yang rimbun.
+
+Danau Idenberg memiliki air yang jernih dan berwarna biru kehijauan, menjadikannya tempat yang ideal untuk kegiatan rekreasi seperti berperahu, memancing, dan menikmati pemandangan alam. Selain itu, danau ini juga menjadi habitat bagi berbagai spesies ikan dan burung, menjadikannya lokasi yang menarik bagi para pecinta alam dan fotografer.
+
+Akses menuju Danau Idenberg bisa dilakukan melalui perjalanan darat dari Jayapura, dan meskipun belum sepopuler destinasi wisata lainnya, keindahan dan ketenangan yang ditawarkan menjadikannya tempat yang layak untuk dikunjungi.
+            </article>
+        </div>
+        <aside>
+            <article class="profile card">
+                <img
+                    src="https://i.ibb.co/jkhNK2JS/foto-farha.jpg"
+                    alt="Foto Farha Arvadilla Damayanti"
+                    class="profile-image"
+                />
+                <h2>Informasi Pribadi</h2>
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>: Farha Arvadilla Damayanti</td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>: Serpong</td>
+                    </tr>
+                    <tr>
+                        <td>Domisili</td>
+                        <td>: Tangerang Selatan</td>
+                    </tr>
+                    <tr>
+                        <td>Pekerjaan</td>
+                        <td>: Mahasiswa</td>
+                    </tr>
+                </table>
+            </article>
+        </aside>
+    </main>
+    <footer>
+        &copy; 2024 Portofolio Wisata Papua - All rights reserved
+    </footer>
+    <script>
+        // Basic JS to add zoom modal for images (optional)
+        const images = document.querySelectorAll('.image-content');
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                const modal = document.createElement('div');
+                modal.style.position = 'fixed';
+                modal.style.top = '0';
+                modal.style.left = '0';
+                modal.style.width = '100vw';
+                modal.style.height = '100vh';
+                modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+                modal.style.display = 'flex';
+                modal.style.justifyContent = 'center';
+                modal.style.alignItems = 'center';
+                modal.style.cursor = 'zoom-out';
+                modal.style.zIndex = '10000';
+
+                const largeImg = document.createElement('img');
+                largeImg.src = img.src;
+                largeImg.style.maxWidth = '90%';
+                largeImg.style.maxHeight = '90%';
+                largeImg.style.borderRadius = '15px';
+                largeImg.style.boxShadow = '0 0 20px white';
+
+                modal.appendChild(largeImg);
+                document.body.appendChild(modal);
+
+                modal.addEventListener('click', () => {
+                    document.body.removeChild(modal);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
